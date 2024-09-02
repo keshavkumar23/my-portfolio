@@ -1,0 +1,26 @@
+.about_content_container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 13vh 0;
+}
+.about_content_container .left p{
+    font-size: 1.3rem;
+    padding-top: 3vh;
+    text-align: center;  
+}
+.about_content_container .left h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+@media screen and (max-width: 640px) {
+    .about_content_container{
+        flex-direction: column;
+    }
+    .about_content_container .left p{
+        margin-left: 2vw;
+    }
+}

@@ -1,0 +1,73 @@
+.work_container .heading{
+    text-align: center;
+    padding: 4rem 0 3rem 0;
+    font-size: 2.5rem;
+}
+.work_container .project_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1140px;
+    margin: auto;
+    grid-gap: 40px;
+    padding-bottom: 5rem;
+    /* border: 2px solid red; */
+    height: auto;
+}
+.work_card{
+    background-color: #1a1919;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+.work_card h2{
+    padding: 0 1.5rem;
+}
+.work_card .about_project p{
+    padding: 0 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+    text-align: justify;
+}
+.into_img{
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+}
+.work_card .about_project {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.work_card .about_project .project_button{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.work_card .about_project .project_button .button{
+    padding: 0.5rem 1rem;
+}
+@media screen and (max-width: 1145px){
+    .work_container .project_container{
+        max-width: 65%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+    .into_img{
+        height: 70vh;
+    }
+    @media screen and (max-width: 740px){
+        .work_container .project_container{
+            max-width: 85%;
+        }
+        .work_container .heading{
+            font-size: 2rem;
+        }
+    }
+    @media screen and (max-width: 480px){
+        .into_img{
+            height: 55vh;
+        }
+    }
+}
