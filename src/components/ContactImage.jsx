@@ -1,20 +1,28 @@
-
 import "./ContactImage.css";
-import {Slide} from "react-reveal";
+import { motion } from "framer-motion";
+
 const ContactImage = () => {
     return (
         <div className="contact_container">
             <div className="contact_bg">
-                <img className = "contact_Image" src="/images/contact.jpg" alt="ContactImage" />
+                <img className="contact_Image" src="/images/contact.jpg" alt="ContactImage" />
             </div>
-                <div className="content">
-                    <Slide top cascade duration={1500}>
-                        <h1>Contact.</h1>
-                    </Slide>
-                    <Slide right cascade duration={2000}>
-                        <p>Let&apos;s connect.</p>
-                    </Slide>
-                </div>
+            <div className="content">
+                <motion.h1
+                    initial={{ y: -100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1.5 }}
+                >
+                    Contact.
+                </motion.h1>
+                <motion.p
+                    initial={{ x: 100, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 2 }}
+                >
+                    Let&apos;s connect.
+                </motion.p>
+            </div>
         </div>
     );
 }
