@@ -25,15 +25,16 @@ const HomeImage = () => {
                     </motion.h1><br/>
                 </div>
                 <div className="home_buttons">
-                    <motion.button
+                    <motion.a
                         initial={{ x: -100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 2.8 }}
-                        onClick={() => window.location.href = "https://drive.google.com/file/d/1qD1IhSQC719dnES09FVfbZE-c56wUZYi/view?usp=sharing"}
                         className="button"
+                        href="https://drive.google.com/file/d/1wbBpl3iype0JNSWnDq_6svwE4_2aPSBg/view?usp=sharing"
+                        target="_blank"
                     >
                         My Resume.
-                    </motion.button>
+                    </motion.a>
                 </div>
             </div>
         </div>
